@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Redirection…</title>
+</head>
+<body>
+  <p id="msg">Redirection…</p>
+
+  <script>
+    (function () {
+      var path = window.location.pathname.replace(/\/+$/, "");
+      var match = path.match(/^\/go\/(C\d+[23])$/i);
+
+      if (!match) {
+        document.getElementById("msg").textContent = "Page introuvable.";
+        return;
+      }
+
+      var trackingCode = match[1].toUpperCase();
+      var suffix = trackingCode.slice(-1);
+
+      var source, medium;
+      if (suffix === "2") {
+        source = "email";
+        medium = "email";
+      } else if (suffix === "3") {
+        source = "linkedin";
+        medium = "social";
+      } else {
+        document.getElementById("msg").textContent = "Code de suivi invalide.";
+        return;
+      }
+
+      var destination =
+        "https://achrafzekri.github.io/?" +
+        "utm_source=" + encodeURIComponent(source) +
+        "&utm_medium=" + encodeURIComponent(medium) +
+        "&utm_campaign=portfolio" +
+        "&utm_content=" + encodeURIComponent(trackingCode);
+
+      window.location.replace(destination);
+    })();
+  </script>
+</body>
+</html>
