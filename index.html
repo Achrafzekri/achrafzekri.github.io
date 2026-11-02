@@ -11,7 +11,7 @@
 <script defer src="js/translations.js"></script>
 <script defer src="js/main.js"></script></head><body><a data-i18n="skip" href="#main" class="skip" >Aller au contenu</a>
 <header>
-<div class="wrap header"><a class="brand" href="#main"><span class="monogram">AZ<span>.</span></span><span>Achraf Zekri<small>FINANCE & PERFORMANCE</small></span></a>
+<div class="wrap header"><a class="brand" href="#main"><span class="monogram">AZ<span>.</span></span><span>Achraf Zekri<small data-i18n="brandRole">CONTRÔLEUR DE GESTION</small></span></a>
 <nav id="navigation" aria-label="Navigation principale"><a data-i18n="about" href="#profil" class="" >À propos</a><a data-i18n="skills" href="#competences" class="" >Compétences</a><a data-i18n="projects" href="#projets" class="" >Projets</a><a data-i18n="resume" href="#cv" class="" >CV</a><a data-i18n="contact" href="#contact" class="nav-contact" >Contact</a></nav>
 <div class="header-controls">
 <div class="languages" role="group" aria-label="Langue / Language"><button type="button" data-lang="fr" lang="fr" aria-pressed="true">FR</button><button type="button" data-lang="en" lang="en" aria-pressed="false">EN</button></div><button class="menu" aria-expanded="false" aria-controls="navigation" type="button">Menu <span aria-hidden="true">☰</span></button></div></div></header>
@@ -19,11 +19,10 @@
 <section class="hero">
 <div class="wrap hero-grid">
 <div class="hero-copy">
-<p data-i18n="location" class="eyebrow">TANGER, MAROC · CONTRÔLE DE GESTION</p>
 <h1 data-i18n="heroTitle" >Derrière chaque chiffre,<br>une décision.</h1>
 <p data-i18n="role" class="role">Contrôleur de gestion junior</p>
 <p data-i18n="intro" class="intro">Comprendre les coûts, fiabiliser le reporting et relier les données opérationnelles à la performance financière.</p>
-<div class="actions"><a data-i18n="seeProjects" href="#projets" class="button primary" >Voir mes projets ↗</a><a data-i18n="download" href="assets/cv/ACHRAF_ZEKRI_CV_CONTROLEUR_DE_GESTION.pdf" class="button light" download data-event="cv_download">Télécharger mon CV ↓</a></div><a data-i18n="getInTouch" href="#contact" class="text-link hero-link" >Me contacter →</a><a href="https://www.linkedin.com/in/achrafzekri/" class="text-link hero-link" data-event="linkedin_click" data-location="header">LinkedIn ↗</a></div>
+<div class="actions"><a data-i18n="seeProjects" href="#projets" class="button primary" >Voir mes projets ↗</a><a data-i18n="seeCV" href="#cv" class="button light">Voir mon CV ↓</a></div><a data-i18n="getInTouch" href="#contact" class="text-link hero-link" >Me contacter →</a><a href="https://www.linkedin.com/in/achrafzekri/" class="text-link hero-link" data-event="linkedin_click" data-location="header">LinkedIn ↗</a></div>
 <div class="portrait-panel">
 <div class="portrait-frame"><img src="assets/images/portrait.jpg" alt="Achraf Zekri" width="400" height="400" fetchpriority="high"></div>
 <div class="portrait-caption"><span class="tiny">PORTFOLIO / 2026</span><strong>Achraf Zekri</strong>
@@ -44,7 +43,13 @@
 <p data-i18n="education" class="eyebrow">FORMATION</p>
 <h3 data-i18n="degree" >DCESS Finance, Audit et Contrôle de Gestion</h3>
 <p>ENCG Tanger · 2020–2022</p>
-<p data-i18n="training" >PK Consulting : contrôle de gestion Junior & Senior.<br>Formation SAP Finance & Controlling.</p></div></div>
+</div>
+<div class="education">
+<p data-i18n="additionalTraining" class="eyebrow">FORMATIONS COMPLÉMENTAIRES</p>
+<h3>PK Consulting <span class="tiny">· 2025</span></h3>
+<p data-i18n="pkTraining">Contrôle de gestion Junior & Senior.</p>
+<h3>SAP Finance & Controlling <span class="tiny">· 2025</span></h3>
+</div></div>
 <div class="timeline">
 <article><span class="tiny">2021 — 2026</span>
 <h3>MATRANORD TRANSPORT</h3><strong data-i18n="job1" >Chargé Comptabilité & Facturation</strong>
@@ -148,7 +153,7 @@
 <div id="cv" class="cv-panel"><span class="pdf-icon" aria-hidden="true">PDF</span>
 <h2 data-i18n="cvTitle" >Mon parcours en détail.</h2>
 <p data-i18n="cvText" >Retrouvez mes expériences, formations et compétences dans mon CV. Document original en français.</p>
-<div class="actions"><a data-i18n="viewCV" href="assets/cv/ACHRAF_ZEKRI_CV_CONTROLEUR_DE_GESTION.pdf" class="button primary" target="_blank" rel="noopener" data-event="cv_view">Consulter le CV ↗</a><a data-i18n="downloadCV" href="assets/cv/ACHRAF_ZEKRI_CV_CONTROLEUR_DE_GESTION.pdf" class="button outline" download data-event="cv_download">Télécharger ↓</a></div>
+<div class="actions"><a data-i18n="viewCV" href="assets/cv/ACHRAF_ZEKRI_CV_CONTROLEUR_DE_GESTION.pdf" class="button primary" target="_blank" rel="noopener" data-event="cv_view">Consulter le CV ↗</a><a data-i18n="downloadCV" href="assets/cv/ACHRAF_ZEKRI_CV_CONTROLEUR_DE_GESTION.pdf" class="button outline" download data-event="cv_download">Télécharger CV ↓</a></div>
 <p data-i18n="pdfNote" class="tiny">PDF · ouverture dans un nouvel onglet</p></div></div></section>
 <section id="contact" class="section contact">
 <div class="wrap contact-grid">
@@ -156,6 +161,6 @@
 <p data-i18n="contactLabel" class="eyebrow">05 / CONTACT</p>
 <h2 data-i18n="contactTitle" >Parlons performance.</h2>
 <p data-i18n="contactText" >Une opportunité en contrôle de gestion ou un échange sur mes projets ? Prenons contact.</p>
-<p data-i18n="contactLocation" class="tiny">Basé à Tanger, Maroc.</p></div>
-<div class="contact-links"><a href="mailto:achraf.zekri@outlook.com">achraf.zekri@outlook.com <span>↗</span></a><a href="https://www.linkedin.com/in/achrafzekri/" data-event="linkedin_click" data-location="contact">LinkedIn <span>↗</span></a><a href="https://github.com/achrafzekri">GitHub <span>↗</span></a></div></div></section></main>
+<p data-i18n="contactLocation" class="tiny">Disponible immédiatement / Basé à Tanger, Maroc.</p></div>
+<div class="contact-links"><a href="mailto:achraf.zekri@outlook.com">achraf.zekri@outlook.com <span>↗</span></a><a href="https://www.linkedin.com/in/achrafzekri/" data-event="linkedin_click" data-location="contact">LinkedIn <span>↗</span></a></div></div></section></main>
 <footer class="wrap"><span>© 2026 Achraf Zekri</span><span data-i18n="footer" >Finance. Données. Décisions.</span><a data-i18n="back" href="#main" class="" >Retour en haut ↑</a></footer></body></html>
