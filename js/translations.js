@@ -44,7 +44,7 @@ window.PORTFOLIO_TRANSLATIONS = {
     "tags04": "Sage · SAP FI/CO (formation)",
     "projectsLabel": "03 / PROJETS",
     "projectsTitle": "Trois terrains. Une logique de décision.",
-    "projectIntro": "Des cas de gestion à publier progressivement. Les fiches ci-dessous présentent le périmètre prévu, sans résultats chiffrés annoncés.",
+    "projectIntro": "Le projet Transport présente la démarche complète, des données brutes aux recommandations. Les deux autres projets sont en préparation.",
     "cat01": "INDUSTRIE",
     "status01": "PROJET À VENIR",
     "pt01": "Coûts & performance industrielle",
@@ -104,7 +104,11 @@ window.PORTFOLIO_TRANSLATIONS = {
     "brandRole": "CONTRÔLEUR DE GESTION",
     "seeCV": "Voir mon CV ↓",
     "additionalTraining": "FORMATIONS COMPLÉMENTAIRES",
-    "pkTraining": "Contrôle de gestion Junior & Senior."
+    "pkTraining": "Contrôle de gestion Junior & Senior.",
+    "transportStatus": "ÉTUDE DE CAS DISPONIBLE",
+    "transportDescription": "Fiabiliser les données, construire les indicateurs et comprendre pourquoi la croissance du CA ne se traduit pas en résultat.",
+    "transportResult": "<strong>CA +10,5 % · Résultat −36,5 %</strong><br>Cas simulé · Janvier–août 2026 vs 2025",
+    "transportExplore": "Explorer le projet"
   },
   "en": {
     "skip": "Skip to content",
@@ -150,7 +154,7 @@ window.PORTFOLIO_TRANSLATIONS = {
     "tags04": "Sage · SAP FI/CO (training)",
     "projectsLabel": "03 / PROJECTS",
     "projectsTitle": "Three sectors. One decision-making approach.",
-    "projectIntro": "Management case studies to be published progressively. The outlines below describe the planned scope; no quantitative results are claimed.",
+    "projectIntro": "The Transport case study covers the full process, from raw data to recommendations. Two more projects are in preparation.",
     "cat01": "MANUFACTURING",
     "status01": "COMING SOON",
     "pt01": "Industrial costs & performance",
@@ -210,6 +214,10 @@ window.PORTFOLIO_TRANSLATIONS = {
     "brandRole": "MANAGEMENT CONTROLLER",
     "seeCV": "See my resume ↓",
     "additionalTraining": "ADDITIONAL TRAINING",
-    "pkTraining": "Junior & Senior Management Control."
+    "pkTraining": "Junior & Senior Management Control.",
+    "transportStatus": "CASE STUDY AVAILABLE",
+    "transportDescription": "Validate data, build performance indicators and understand why revenue growth does not translate into profit growth.",
+    "transportResult": "<strong>Revenue +10.5% · Profit −36.5%</strong><br>Simulated case · January–August 2026 vs 2025",
+    "transportExplore": "Explore the project (French)"
   }
 };
