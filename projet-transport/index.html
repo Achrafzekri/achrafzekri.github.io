@@ -68,12 +68,37 @@ dialog{border:0;border-radius:8px;padding:1rem;max-width:96vw;max-height:95vh;ba
 .skip{position:absolute;left:1rem;top:-100px;z-index:50;background:white;padding:1rem}.skip:focus{top:1rem}
 .section-nav{position:fixed;right:12px;top:50%;transform:translateY(-50%);z-index:20}.section-nav ul{list-style:none;padding:0;margin:0}.section-nav li{margin:2px 0}.section-nav a{position:relative;display:flex;align-items:center;justify-content:flex-end;min-width:44px;min-height:64px;text-decoration:none}.toc-line{display:block;width:20px;height:3px;background:#748498;border-radius:5px;transition:width .2s,background .2s}.section-nav a[aria-current="location"] .toc-line{width:30px;background:#d68a1b}.toc-label{position:absolute;right:42px;max-width:min(360px,calc(100vw - 85px));width:max-content;padding:10px 16px;border-radius:6px;background:#1F2D3D;color:#fff;font-size:14px;line-height:1.4;opacity:0;visibility:hidden;transform:translateX(8px);transition:opacity .2s,transform .2s;pointer-events:none;box-shadow:0 4px 20px #0002}.section-nav:hover .toc-label,.section-nav:focus-within .toc-label{opacity:1;visibility:visible;transform:none;pointer-events:auto}.section-nav a:hover .toc-line,.section-nav a:focus-visible .toc-line{background:#ffb347;width:30px}.toc-toggle{display:none}.method-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.2rem}.method-step{padding:1.5rem;background:var(--card);border:1px solid var(--line);border-top:3px solid var(--amber);border-radius:6px}.method-step p{font-size:1rem}.method-step p:last-child{margin-bottom:0}.method-example{padding-top:1rem;border-top:1px solid var(--line);color:#34516c}.method-step code{font-size:.92em;overflow-wrap:anywhere}.model-figure{margin:1.8rem 0}.project-contact{margin-top:2.5rem;padding:2rem;border:1px solid var(--line);background:white;border-top:4px solid var(--amber);border-radius:6px}.contact-actions{display:flex;flex-wrap:wrap;gap:1rem}.contact-actions .btn{margin-top:.3rem}.btn-contact{background:#1F2D3D;color:#fff}.contact-email{margin-bottom:0;overflow-wrap:anywhere}
 @media(max-width:1170px) and (min-width:761px){body>.top>.wrap,body>.hero>.wrap,body>main.wrap,footer>.wrap{padding-right:64px}}
-@media(max-width:760px){.method-grid{grid-template-columns:1fr}.project-contact{padding:1.2rem}.section-nav{top:auto;bottom:16px;right:16px;transform:none}.toc-toggle{display:block;margin-left:auto;border:1px solid #59717f;border-radius:24px;background:#1F2D3D;color:white;padding:12px 18px;font:600 14px var(--head);cursor:pointer}.section-nav ul{display:none;position:absolute;bottom:56px;right:0;width:min(330px,calc(100vw - 32px));max-height:65vh;overflow:auto;background:#1F2D3D;border-radius:8px;padding:8px;box-shadow:0 4px 20px #0003}.section-nav.is-open ul{display:block}.section-nav a{justify-content:flex-start;padding:10px 12px}.section-nav .toc-label{position:static;width:auto;max-width:none;opacity:1;visibility:visible;transform:none;box-shadow:none;padding:0;pointer-events:auto}.toc-line{display:none}.section-nav a[aria-current="location"]{border-left:3px solid var(--amber)}footer{padding-bottom:90px}}
+@media(max-width:760px),(max-height:640px){.method-grid{grid-template-columns:1fr}.project-contact{padding:1.2rem}.section-nav{top:auto;bottom:16px;right:16px;transform:none}.toc-toggle{display:block;margin-left:auto;border:1px solid #59717f;border-radius:24px;background:#1F2D3D;color:white;padding:12px 18px;font:600 14px var(--head);cursor:pointer}.section-nav ul{display:none;position:absolute;bottom:56px;right:0;width:min(330px,calc(100vw - 32px));max-height:65vh;overflow:auto;background:#1F2D3D;border-radius:8px;padding:8px;box-shadow:0 4px 20px #0003}.section-nav.is-open ul{display:block}.section-nav a{justify-content:flex-start;padding:10px 12px}.section-nav .toc-label{position:static;width:auto;max-width:none;opacity:1;visibility:visible;transform:none;box-shadow:none;padding:0;pointer-events:auto}.toc-line{display:none}.section-nav a[aria-current="location"]{border-left:3px solid var(--amber)}footer{padding-bottom:90px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.toc-line,.toc-label{transition:none}.hero h1{animation:none}}
+
+/* Portfolio navigation */
+.portfolio-header{background:#fff;border-top:1px solid #dbe4e7;border-bottom:1px solid #dbe4e7}
+.portfolio-header-inner{max-width:1410px;margin:auto;padding:26px 4.25%;display:flex;align-items:center;justify-content:space-between;gap:32px}
+.portfolio-brand{display:flex;align-items:center;gap:16px;text-decoration:none;color:#183446;flex-shrink:0}
+.portfolio-monogram{font-size:36px;line-height:1;font-weight:750;letter-spacing:-2.5px;padding-right:20px;border-right:1px solid #dbe4e7}
+.portfolio-monogram span{color:#176657}
+.portfolio-name{font-size:21px;line-height:1.4;font-weight:700}
+.portfolio-name small{display:block;font-size:9px;letter-spacing:2px;font-weight:500;margin-top:4px}
+.portfolio-links{display:flex;align-items:center;gap:30px;flex-wrap:wrap}
+.portfolio-links a{color:#183446;text-decoration:none;font-size:16px;font-weight:500}
+.portfolio-links a:hover{color:#176657}
+.portfolio-contact{border:1px solid #dbe4e7;border-radius:4px;padding:11px 20px}
+@media(max-width:900px){.portfolio-header-inner{gap:18px;padding:20px 24px}.portfolio-links{gap:18px}.portfolio-name{font-size:18px}.portfolio-monogram{font-size:32px}}
+@media(max-width:760px){.portfolio-header-inner{flex-wrap:wrap;padding:18px 16px;gap:14px}.portfolio-links{width:100%;gap:10px 18px;justify-content:flex-start}.portfolio-links a{font-size:14px}.portfolio-contact{padding:7px 12px}}
 </style>
 </head>
 <body><a class="skip" href="#contenu">Aller au contenu</a>
-<nav class="top"><div class="wrap"><a href="../#projets">Achraf Zekri · Portfolio</a><a href="#rapport">Voir le reporting</a><a href="#methode">La méthode</a></div></nav>
+<header class="portfolio-header">
+  <div class="portfolio-header-inner">
+    <a class="portfolio-brand" href="../#main" aria-label="Achraf Zekri — Retour au portfolio">
+      <span class="portfolio-monogram" aria-hidden="true">AZ<span>.</span></span>
+      <span class="portfolio-name">Achraf Zekri<small>CONTRÔLEUR DE GESTION</small></span>
+    </a>
+    <nav class="portfolio-links" aria-label="Navigation vers le portfolio">
+      <a href="../#profil">À propos</a><a href="../#competences">Compétences</a><a href="../#projets">Projets</a><a href="../#cv">CV</a><a class="portfolio-contact" href="../#contact">Contact</a>
+    </nav>
+  </div>
+</header>
 <header class="hero">
   <div class="wrap">
     <p class="meta">Projet 1 · Contrôle de gestion · Entreprise et données fictives (Détroit Transport Services, Tanger)</p>
@@ -83,7 +108,7 @@ dialog{border:0;border-radius:8px;padding:1rem;max-width:96vw;max-height:95vh;ba
   </div>
 </header>
 
-<nav class="section-nav" aria-label="Sommaire de l’étude de cas"><button class="toc-toggle" aria-expanded="false" aria-controls="toc-list" type="button">Sommaire</button><ul id="toc-list"><li><a href="#demande" aria-label="La demande du directeur général"><span class="toc-label">La demande du directeur général</span><span class="toc-line" aria-hidden="true"></span></a></li><li><a href="#reponse" aria-label="Ma réponse : non, pas à ce stade"><span class="toc-label">Ma réponse : non, pas à ce stade</span><span class="toc-line" aria-hidden="true"></span></a></li><li><a href="#rapport" aria-label="Le reporting, du constat à l’action en cinq pages"><span class="toc-label">Le reporting, du constat à l’action en cinq pages</span><span class="toc-line" aria-hidden="true"></span></a></li><li><a href="#actions" aria-label="Les actions que je propose"><span class="toc-label">Les actions que je propose</span><span class="toc-line" aria-hidden="true"></span></a></li><li><a href="#methode" aria-label="Le travail derrière les chiffres"><span class="toc-label">Le travail derrière les chiffres</span><span class="toc-line" aria-hidden="true"></span></a></li></ul></nav>
+<nav class="section-nav" aria-label="Sommaire de l’étude de cas"><button class="toc-toggle" aria-expanded="false" aria-controls="toc-list" type="button">Sommaire</button><ul id="toc-list"><li><a href="#demande" aria-label="La demande du directeur général"><span class="toc-label">La demande du directeur général</span><span class="toc-line" aria-hidden="true"></span></a></li><li><a href="#reponse" aria-label="Ma réponse : non, pas à ce stade"><span class="toc-label">Ma réponse : non, pas à ce stade</span><span class="toc-line" aria-hidden="true"></span></a></li><li><a href="#rapport" aria-label="Le reporting, du constat à l’action en cinq pages"><span class="toc-label">Le reporting, du constat à l’action en cinq pages</span><span class="toc-line" aria-hidden="true"></span></a></li><li><a href="#actions" aria-label="Les actions que je propose"><span class="toc-label">Les actions que je propose</span><span class="toc-line" aria-hidden="true"></span></a></li><li><a href="#methode" aria-label="Le travail derrière les chiffres"><span class="toc-label">Le travail derrière les chiffres</span><span class="toc-line" aria-hidden="true"></span></a></li><li><a href="#annexes" aria-label="Pour approfondir"><span class="toc-label">Pour approfondir</span><span class="toc-line" aria-hidden="true"></span></a></li><li><a href="#contact-projet" aria-label="Consulter le classeur ou échanger sur le projet"><span class="toc-label">Consulter le classeur ou échanger sur le projet</span><span class="toc-line" aria-hidden="true"></span></a></li></ul></nav>
 <main class="wrap" id="contenu">
   <section id="demande">
     <h2>La demande du directeur général</h2>
