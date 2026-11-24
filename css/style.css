@@ -5,3 +5,13 @@
 
 /* Published Transport case study */
 .project-image{display:block}.project-image img{display:block;width:100%;height:auto}.project-published .project-result{min-height:0;font-size:13px;padding:14px;background:#f2f6f6;border-left:3px solid #176657}.project-published .status{font-size:11px}.project-published .project-tools{font-size:12px}.project-published .button{font-size:14px}.project-published .project-top{background:#1F2D3D;color:white}
+
+/* Evidence first and featured case study */
+.hero-proof{margin:0 0 28px;padding:18px 21px;background:#193a4b;border:1px solid #4b7380;border-left:4px solid var(--teal);border-radius:5px;max-width:570px}
+.hero-proof-label{display:block;color:var(--teal);font-size:10px;letter-spacing:1.5px;font-weight:700}
+.hero-proof-numbers{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin:8px 0 3px;font-size:clamp(17px,2vw,24px);line-height:1.3}
+.hero-proof-numbers strong{font-weight:650}.hero-proof-numbers span{color:var(--teal)}.hero-proof p{font-size:12px;color:#c8d9dd;margin:0 0 5px}.hero-proof a{font-size:13px;font-weight:650;color:white;text-underline-offset:4px}
+.focus-strip div{align-items:center}.focus-strip div:not(:last-child):after{content:"→";margin-left:auto;color:var(--teal)}
+@media(min-width:801px){.projects{grid-template-columns:repeat(2,minmax(0,1fr))}.project-published{grid-column:1/-1;display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr)}.project-published .project-top{grid-column:1/-1}.project-published .project-image{background:#e9eef0;display:flex;align-items:center;padding:20px;border-right:1px solid var(--line)}.project-published .project-image img{box-shadow:0 8px 25px #102b3c21}.project-published .project-body{padding:30px 36px}.project-published .project-body p:not(.status){min-height:0}.project-published .project-result{margin:18px 0}}
+@media(max-width:430px){.focus-strip div:not(:last-child):after{display:none}.hero-proof{padding:15px}.hero-proof-numbers{gap:7px}}
+@media(prefers-reduced-motion:no-preference){.hero-proof{animation:proof-appear .7s .12s ease-out both}@keyframes proof-appear{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}}
